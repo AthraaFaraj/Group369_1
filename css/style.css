@@ -8,9 +8,137 @@ body{
 }
 
 *{margin: 0%;
-    padding: 0%;}
+    padding: 0%;
+    font-family: 'Open Sans', sans-serif;}
     
+
+     header{display: flex;
+        flex-direction: row;
+      margin-bottom: 3rem;
    
+    }
+/* -----------------------------facebook btn */
+.facebook-btn{margin-left: 330px;}
+
+.facebook-log{margin-left:280px;}
+    /* ----------------------------------------end */
+.logo{margin-top: 10px;
+        color: #125D98;
+    font-size: 40px;
+    margin-left: 50px;}
+    
+.btn{margin-right: 50px;
+padding: 0%;
+background: #125D98;
+color:#e7dcdc;
+font-weight: 600;
+font-size: 1.1rem;
+cursor:pointer ;
+border-radius: 6px;
+border: none;
+padding: 10px 30px;
+margin-top: 20px;
+}
+.btn a{text-decoration: none;
+color: white;}
+/* -------------------------------------------------menu start  */
+.navbar{height: 80px;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+padding: 0 5%;}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+
+}
+
+.navbar ul li{padding: 10px 30px;
+position: relative;
+}
+
+.navbar ul li a{color: gray;
+text-decoration: none;
+font-size: 1.1rem;
+transition: 0.3s;
+}
+
+.navbar ul li a:hover{color: #125D98;}
+
+
+
+.dropdown{display: none;
+position: absolute;
+}
+
+
+.down-menu:hover .dropdown{
+    display: block;
+
+    position: absolute;
+    z-index: 1;
+    left: 42%;
+    top: 7%;
+    background-color: #125D98;
+    border-radius: 5px;
+    color: #e7dcdc;
+}
+
+
+.dropdown ul{display: block;
+    margin: 10px;
+   
+}
+
+ .dropdown ul li{width: 100%;
+    
+    
+padding:5%;}
+   /* front bannal */
+ .front-bannal{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding: 30px;
+     font-family: 'Open Sans', sans-serif;
+     color: #7c7a74;
+ }
+ .image{
+    max-width: 35%;
+
+       }
+.img1{
+    width: 100%;
+    /* display: block; */
+       /* margin: 0 auto; */
+       /* position: relative; */
+       /* left: 26%; */
+        /* border-radius: -6px;  */
+       /* width: 500px;
+       height: 500px;
+       top: 90px; */
+}
+#h1-front{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    /* color: #4e4b4b; */
+}
+.read-more-btn{
+    background-color: #125D98;
+      padding: 14px 20px;
+      cursor: pointer;
+      color: #e7dcdc;
+      border-radius: 12px;
+      font-weight: bold;
+  
+    font-size: 1rem;
+    border: none;
+}
+/* end front bannal */
 
 
     /* start of featured courses section */
@@ -20,8 +148,9 @@ body{
     .features #title_courses{
 text-align: center;
 margin: 60px 0px;
-font-weight: bold;
+font-weight: 600;
 font-size: 2rem;
+color: #7c7a74;
  }
  .features .container_courses{
     display: flex;
@@ -44,7 +173,7 @@ font-size: 2rem;
      /* text-align: center; */
      margin: 0px auto;
      border-radius: 3px;
-     background-color: #FFFBE0;
+     /* background-color: #FFFBE0; */
     /* border: 1px solid #EEEEEE; */
      box-shadow: 12px 12px 12px #aaaaaa;
      
@@ -56,7 +185,7 @@ font-size: 2rem;
 
 .features .contentOfFeaturedCourse a{
    text-decoration: none;
-   color: #FFB400;
+   color: #7c7a74;
    font-weight: bold;
    font-size: 1.3rem;
   
@@ -72,7 +201,7 @@ font-size: 2rem;
       background-color: #125D98;
       padding: 14px 20px;
       cursor: pointer;
-      color: rgb(233, 222, 222);
+      color: #e7dcdc;
       border-radius: 12px;
       font-weight: bold;
   
@@ -197,10 +326,11 @@ ol li{
 
 .testimonial_section h1{
     text-align: center;
-    color: #F5A962;
+    color: #7c7a74;
     text-transform: capitalize;
     font-size: 2rem;
     font-weight: 700;
+    margin-top: 70px;
     /* margin: 20px 0px; */
 }
 .testimonal_container{
@@ -216,7 +346,8 @@ ol li{
   justify-content: space-between;
 
 }
-.review{ background: #FFFBE0;
+.review{ 
+    /* background: #FFFBE0; */
     width: calc(26% - 10px);
     padding: 25px;
     border-radius: 3px;
@@ -226,7 +357,7 @@ ol li{
 }
 .testimonal_container .review i.quote{
     font-size: 1rem;
-    color: #F5A962;
+    color: #125D98;
 }
 .testimonal_container .review .review2{
     display: flex;
@@ -245,11 +376,11 @@ ol li{
 .info .job{
     font-size: 1rem;
     font-weight: bold;
-    color: #F5A962;
+    color: #125D98;
 }
 .review .info .stars_review{
     margin-top: 2px;
-    color: #F5A962;
+    color: #125D98;
 }
 
 
@@ -267,7 +398,7 @@ ol li{
     height: 75px;
     width: 75px;
     padding: 3px;
-    background: #FFB400;
+    background: #125D98;
     border-radius: 50%;
 }
 
@@ -299,7 +430,7 @@ ol li{
                 
         }
         #header-course-content{
-        
+        color: grey;
         margin: 7rem 0rem 0rem 9.4rem;
     }
     .ckeck{
@@ -393,7 +524,7 @@ border-bottom-width: 2px;
 }
 .container-content-course i{
 margin: 0px 10px;
-color: rgb(23, 113, 173);
+color: gray;
 }
 .container-content-course a{
 text-decoration: none;
@@ -444,7 +575,7 @@ margin: 7rem 0rem 0rem 9.4rem;
     #enrol_course{
     display: inline-block;
     color: #e9dfdf;
-    background-color: #1b368d;
+    background-color: #125D98;
     font-weight: 500;
     /* font-size: 20px; */
     font-size: 1.25rem;
@@ -532,7 +663,7 @@ margin: 7rem 0rem 0rem 9.4rem;
 .instructor_info369{
     width: 20%;
     padding: 20px;
-    background-color: beige;
+    /* background-color: beige; */
     box-shadow: 7px 7px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 4px;
     /* display: inline-block; */
@@ -546,7 +677,7 @@ margin: 7rem 0rem 0rem 9.4rem;
     width: 70px;
     height: 70px;
     border-radius: 50%;
-   background-color: indianred;
+   background-color: #125D98;
    padding: 5px;
    margin-left: 50%;
    transform: translate(-50%, -50%);
@@ -571,25 +702,24 @@ margin: 7rem 0rem 0rem 9.4rem;
    
     margin: 0px auto;
     border-bottom-style: outset;
-    border-block-color: red;
+    border-block-color: #125D98;
     border-bottom-width: 2px;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
 }
 .instructor_info369 span {
 font-size: 1rem;
-color: rgb(54, 37, 114);
+color: #125D98;
 
 }
 .instructor_info369 p{
     padding: 20px 0px;
     font-size: 0.89rem;
 }
-.conrat_instr i{
-    color: lightcoral;
+conrat_instr i {
+    color: #125D98;
     font-size: 2rem;
     padding: 5px;
-    
 }
 .content_container{
     display: flex;
@@ -616,7 +746,7 @@ font-size: 1.05rem;
 
 }
 .course_info i{
-   color: rgb(50, 67, 124);
+   color: #125D98;
    font-size: 1.05rem;
    padding: 10px 20px;
 }
@@ -624,7 +754,7 @@ font-size: 1.05rem;
 padding: 10px 10px;
 /* border-bottom-style: outset; */
 border-bottom-style: inset;
-  border-bottom-color: coral;
+  border-bottom-color: #125D98;
   border-bottom-width: 1px;
 
 }
@@ -659,13 +789,13 @@ color: rgb(37, 42, 46);
     margin: 0px 0px;
     margin-left: 10px;
     font-size: 0.9rem;
-    color: saddlebrown;
+    color: #125D98;
  }
  .ready_to_enroll{
      width: 30%;
      padding: 20px;
      margin: 20px;
-     background-color: blueviolet;
+     /* background-color: blueviolet; */
      text-align: center;
      align-items: center;
      border-radius: 20px;
@@ -688,7 +818,7 @@ color: rgb(37, 42, 46);
     /* flex:1 1 23rem; */
     width: 20%;
     padding: 1.5rem;
-    background-color: beige;
+    /* background-color: beige; */
     box-shadow: 7px 7px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 4px;
     border: .1rem solid rgba(0,0,0,.1);
@@ -707,7 +837,7 @@ color: rgb(37, 42, 46);
     width: 80px;
     height: 80px;
     border-radius: 50%;
-   background-color: indianred;
+   background-color: #125D98;
    padding: 5px;
    margin-left: 50%;
    transform: translate(-50%, -50%);
@@ -726,13 +856,13 @@ color: rgb(37, 42, 46);
     
     font-size: 2rem;
    
-  
+  color: #81817b;
     font-weight: bold;
     margin:70px 0px 100px 0px;
 }
 .instructor_info span {
 font-size: 1rem;
-color: rgb(54, 37, 114);
+color: #125D98;
 
 }
 .instructor_info p{
@@ -740,7 +870,7 @@ color: rgb(54, 37, 114);
     font-size: 0.89rem;
 }
 .conrat_instr i{
-    color: lightcoral;
+    color: #125D98;
     font-size: 2rem;
     padding: 5px;
     
@@ -761,3 +891,108 @@ color: rgb(54, 37, 114);
 
 
         /* end of instuctor page */
+
+
+
+        /* front bannal */
+       
+        .container{
+            max-width: 1170px;
+            background-attachment: red;
+            margin: auto;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        ul{
+            list-style: none;
+        }
+        .footer{
+            background-color: #474744;
+            padding: 70px 0;
+        }
+        .footer-col {
+            width: 25%;
+            padding:  15px;
+        }
+        .footer-col h4{
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+            font-weight: 500;
+            position: relative;
+        }
+        .footer-col h4::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px; 
+            background-color:#125D98; 
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+        .footer-col ul li:not(:last-child){
+          margin-bottom: 10px;
+        }
+        .footer-col ul li a{
+           font-size: 16px;
+           text-transform: capitalize;
+           color: #125D98;
+           text-decoration: none;
+           font-weight: 300;
+           color: #fffbe0;
+           display: block;
+           transform: all 0.3s ease;
+
+        }
+        .footer-col ul li a:hover{
+            color: #125D98;
+            padding-left: 8px;
+        }
+        .footer-col .social-links a{
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(225, 225, 225, 0.2);
+            margin: 0 10px 10px 0;
+            line-height: 40px;
+            text-align: center;
+            border-radius:50%;
+            color: #518dbb;
+            transition: all 0.3s ease;
+        }
+        .footer-col .social-links a:hover{
+            color: #24262b;
+            background-color: #ffffff;
+        }
+        /*responsive */
+        @media(max-width: 767px){
+            .footer-col{
+                width: 50%;
+                margin-bottom: 30px;
+            }
+        }
+
+        .footer .copyright{  
+        font-size: 1rem;  
+        text-align: center;  
+        font-weight: lighter;  
+        letter-spacing: .1rem;  
+        color:#67a1ce; 
+        border-top: .1rem solid #125D98;  
+ 
+        padding: 1rem 1rem;  
+         
+        }  
+        .footer .copyright .add{  
+            color: #EEEEEE; 
+        }
+
+         .logo2{color: #AAD8D3; 
+            font-size: 25px; 
+            margin-left: 50px; 
+            margin-top: 5px;
+        }

@@ -177,3 +177,9 @@ enrollBtn.addEventListener("click", (g)=>{
     // document.getElementById("ff").appendChild(divCounter)
    
 })
+
+
+// frony bannal
+const readMoreBtn = document.querySelector('.read-more-btn');
+const text = document.querySelector('.text');
+
