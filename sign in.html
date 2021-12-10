@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <title>Sign In</title>
+</head>
+<body>
+
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0&appId=4772383156134697&autoLogAppEvents=1" nonce="C5VfWpZF"></script>
+    <!-- esraa -->
+    <header>
+        <div class="logo">LOGO</div>
+        <nav class="navbar">
+            <ul >
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <div class="down-menu">
+               <li><a>Courses <i class="fa fa-caret-down"></i></a></li> 
+                <div class="dropdown">
+                  <li><a href="#">Html</a></li>
+                  <li><a href="#">JavaScript</a></li>
+                  <li><a href="#">React Js</a></li>
+                </div>
+              </div> 
+
+              <li><a href="#">Teachers</a></li>
+              <li><a href="#">Testimonial</a></li>
+              <li><a href="./contact-form.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div>
+            <button type="button" class="btn"><a href="./sign up.html">Register</a></button>
+        </div>
+    </header>
+
+    <div class="form-box">
+        <script>
+          <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
+
+            function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
+              console.log('statusChangeCallback');
+              console.log(response);                   // The current login status of the person.
+              if (response.status === 'connected') {   // Logged into your webpage and Facebook.
+                testAPI();  
+              } else {                                 // Not logged into your webpage or we are unable to tell.
+                document.getElementById('status').innerHTML = 'Please log ' +
+                  'into this webpage.';
+              }
+            }
+          
+          
+            function checkLoginState() {               // Called when a person is finished with the Login Button.
+              FB.getLoginStatus(function(response) {   // See the onlogin handler
+                statusChangeCallback(response);
+              });
+            }
+          
+          
+            window.fbAsyncInit = function() {
+              FB.init({
+                appId      : '4772383156134697',
+                cookie     : true,                     // Enable cookies to allow the server to access the session.
+                xfbml      : true,                     // Parse social plugins on this webpage.
+                version    : 'v12.0'           // Use this Graph API version for this call.
+              });
+          
+          
+              FB.getLoginStatus(function(response) {   // Called after the JS SDK has been initialized.
+                statusChangeCallback(response);        // Returns the login status.
+              });
+            };
+           
+            function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
+              console.log('Welcome!  Fetching your information.... ');
+              FB.api('/me', function(response) {
+                console.log('Successful login for: ' + response.name);
+                document.getElementById('status').innerHTML =
+                  'Thanks for logging in, ' + response.name + '!';
+              });
+            }
+          
+          </script>
+          
+          
+          <!-- The JS SDK Login Button -->
+          <h2 style="margin-left: 130px;">Login with Facebook</h2>
+          
+          <fb:login-button class="facebook-btn" scope="public_profile,email" onlogin="checkLoginState();">
+          </fb:login-button>
+          
+          <div id="status">
+          </div>
+          
+          <!-- Load the JS SDK asynchronously -->
+          <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+        <div class="Signup-topic">
+          <p>Or sign in with your email & password </p>
+          
+            
+            
+        </div>
+        <div class="fields">
+            <form action="dropdown.php" onsubmit= "return validate(this);" method="post">
+                <label for="email">E-mail:</label><br>
+                <input type="email" placeholder="E-mail" id="fname" name="email"><br><br>
+                <label for="password">Password:</label><br>
+                <div class="wrap">
+                    <input type="password" placeholder="Password" id="password" name="pwd">
+                    <span><i class="fas fa-eye" aria-hidden="true" id="eye" onclick="toggle()"></i></span>
+                    
+                </div><br>
+                <script>
+                    var state=false;
+                    function toggle(){
+                        if(state){
+                            document.getElementById("password").setAttribute("type","password");
+                            document.getElementById("eye").style.color = 'gray';
+                      
+                            
+                            state=false;
+                        }
+                        else{  document.getElementById("password").setAttribute("type","text");
+                               document.getElementById("eye").style.color = 'rgb(0, 132, 255)';
+                      
+                        
+                            state=true;}
+                    }
+                    
+                </script>
+                <div>
+                    <input class="forgot-btn" type="button" value="Forgot Password?" onclick="window.open('file:///home/esra/Desktop/Group1/forgot-password.html','_blank','height=400 , width=800')">
+                </div>
+                <input type="submit" name="submit" value="submit" id="signup-btn" />
+               
+                </form>
+        </div>
+     </div>   
+     <footer>
+      <div class="logo2">LOGO</div>
+      <div class="navbar">
+         <a href="#">Home</a>
+         <a href="#">Courses</a>
+         <a href="#">Contact</a>
+      </div>
+      <div class="copyright"> 
+          &copy; 2021 <span class="add"> courses web.</span> All Rights Reserved. 
+      </div>
+      
+  
+   </footer>         
+</body>
+</html>
