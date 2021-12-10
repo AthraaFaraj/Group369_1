@@ -1,0 +1,310 @@
+body{
+    padding: 0;
+    margin: 0;
+    line-height: 1.45;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica, sans-serif;
+    background: #EEEEEE;;
+}
+
+*{margin: 0%;
+    padding: 0%;}
+    
+    header{display: flex;
+        flex-direction: row;
+      
+   
+    }
+/* -----------------------------facebook btn */
+.facebook-btn{margin-left: 330px;}
+
+.facebook-log{margin-left:280px;}
+    /* ----------------------------------------end */
+.logo{margin-top: 10px;
+        color: #104294;
+    font-size: 40px;
+    margin-left: 50px;}
+    
+.btn{margin-right: 50px;
+padding: 0%;
+background: #000000;
+color:#ffffff;
+font-size: 1.1rem;
+cursor:pointer ;
+border-radius: 6px;
+border: none;
+padding: 10px 30px;
+margin-top: 20px;
+}
+.btn a{text-decoration: none;
+color: white;}
+/* -------------------------------------------------menu start  */
+.navbar{height: 80px;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+padding: 0 5%;}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+
+}
+
+.navbar ul li{padding: 10px 30px;
+position: relative;
+}
+
+.navbar ul li a{color: gray;
+text-decoration: none;
+font-size: 1.1rem;
+transition: 0.3s;
+}
+
+.navbar ul li a:hover{color: rgb(0, 132, 255);}
+
+
+
+.dropdown{display: none;
+position: absolute;}
+
+
+.down-menu:hover .dropdown{
+    display: block;
+
+    position: absolute;
+    z-index: 1;
+    left: 42%;
+    top: 7%;
+    background-color: rgb(15, 19, 14);
+    border-radius: 5px;
+}
+
+.dropdown ul{display: block;
+    margin: 10px;
+   
+}
+
+ .dropdown ul li{width: 100%;
+    
+padding:5%;}
+
+
+
+/* ---------------------------------------------end of menu */
+
+
+
+
+/* ------------------------------------sign up start */
+
+.form-box{
+    width: 30%;
+    font-size: 1.1rem;
+  margin-top: 3%;
+margin-bottom: 3%;
+    margin-left: 35%;
+border: 0.5px solid rgb(192, 192, 192);
+border-radius: 10px;
+line-height: 1.7;
+background-color: white;
+padding:28px;
+
+}
+
+
+#fname{padding: 10px 40px 10px 10px;
+width: 75%;
+border: 0.5px solid rgb(192, 192, 192);
+border-radius:4px;}
+
+#signup-btn{
+    padding: 0%;
+    background: #000000;
+    color:#ffffff;
+    font-size: 1.1rem;
+    cursor:pointer ;
+    border-radius: 6px;
+    border: none;
+    padding: 10px 30px;
+    margin-top: 40px;
+    margin-left: 20%;
+   }
+
+.fields{  margin-left: 20%;
+}
+
+.Signup-topic p{margin: 10px;
+    text-align:center;
+color: gray;}
+
+.Signup-topic h2{margin: 10px;
+    text-align: center;
+font-size: 2rem;
+}
+
+.dou{margin-left: 10%;}
+label{margin: 3px;}
+
+.forgot-btn{border: none;
+cursor: pointer;
+font-size: 1rem;
+background-color: white;
+margin-left: 80px;
+text-decoration: underline;
+color: blue;}
+/* --------------------------------------------- sign up end*/
+
+
+/* -------------------------------------forgot password start */
+.pass-form{width: 80%;
+    font-size: 1.1rem;
+  margin-top: 6%;
+margin-bottom: 3%;
+  margin-left: 10%;
+border: 0.5px solid rgb(192, 192, 192);
+border-radius: 10px;
+line-height: 1.7;
+background-color: white;
+padding:28px;
+align-items: center;
+}
+
+#forgot-pass-btn{padding: 0%;
+    background: #000000;
+    color:#ffffff;
+    font-size: 1.1rem;
+    cursor:pointer ;
+    border-radius: 6px;
+    border: none;
+    padding: 10px 30px;
+    margin-top: 40px;
+}
+
+
+
+/* --------------------------------------------forgot password end */
+/* -------------------------------------------- sign in starting*/
+
+
+span{
+    position: absolute;
+  right: 38%;
+  
+  margin-top: 4px;
+    cursor: pointer;}
+    
+    ::placeholder{font-size: 1rem;
+    }
+    
+    .fa-eye{
+        font-size: 1rem;
+    color: gray;}
+    
+    #password{padding: 10px 40px 10px 10px;
+        width: 75%;
+        border: 0.5px solid rgb(192, 192, 192);
+        border-radius:4px;
+        position: relative;
+    
+    }
+    
+
+
+
+
+
+
+
+/* -----------------------------------------------sign in ending */
+
+/* ----------------------------------contact start */
+
+#message{border: 0.5px solid rgb(192, 192, 192);
+    border-radius:4px;}
+
+.icons-box{
+    margin-top: 6%;
+
+
+font-size: 1.5rem;}
+
+.icons-box p{padding-bottom: 10%;
+    margin-left: 20%;
+}
+
+.contact-icons{
+font-size: 2rem;
+margin-left: 15%;
+}
+
+.contact-icons i{color: rgb(0, 132, 255);
+padding:10px;}
+
+
+#err_message{padding: 0px;
+background-color:rgb(0, 132, 255) ;
+transition: all 0.5s ease;
+text-align: center;
+font-size: 10px;
+font-size: 1rem;
+color: white;}
+
+
+
+
+
+#name{padding: 10px 40px 10px 10px;
+    width: 75%;
+    border: 0.5px solid rgb(192, 192, 192);
+    border-radius:4px;}
+
+#email{padding: 10px 40px 10px 10px;
+    width: 75%;
+    border: 0.5px solid rgb(192, 192, 192);
+    border-radius:4px;}
+
+/* ------------------------------------contact end */
+
+    .features{
+        padding: 80%;
+    }
+
+    footer
+        {
+
+            position: relative;
+            background: #282727;
+            color:#AAD8D3;
+            padding-top: 50px;
+            
+        }
+
+        footer .copyright{ 
+        font-size: 1rem; 
+        text-align: center; 
+        font-weight: lighter; 
+        letter-spacing: .1rem; 
+        color: #AAD8D3;
+        border-top: .1rem solid #AAD8D3;; 
+
+        padding: 1rem 1rem; 
+        
+        } 
+        footer .navbar{display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 20%;}
+
+        footer .navbar a{
+            color: #AAD8D3;
+        }
+
+        footer .copyright .add{ 
+            color: #EEEEEE;
+        }
+        .logo2{color: #AAD8D3;
+            font-size: 25px;
+            margin-left: 50px;
+        }
+        
