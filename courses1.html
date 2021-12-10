@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <style>
+      .features{
+        margin: 40px 0px;
+    } 
+    .features #title_courses{
+text-align: center;
+margin: 60px 0px;
+font-weight: bold;
+font-size: 2rem;
+ }
+ .features .container_courses{
+    display: flex;
+    /* flex-direction: row;
+    justify-content: center; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+     /* flex-wrap: wrap; */
+    /* align-items: center;  */
+    margin: 0px 1rem;
+    
+     /* background: rgb(175, 126, 126); */
+ }
+ .features .container_courses .box img{
+     width: 100%;
+     /* height: 15rem; */
+     /* object-fit: cover; */
+ }
+ .features .container_courses .box{
+     width: 25%;
+     /* text-align: center; */
+     margin: 2rem 2rem;
+     border-radius: 3px;
+     background-color: #FFFBE0;
+    /* border: 1px solid #EEEEEE; */
+     box-shadow: 12px 12px 12px #aaaaaa;
+     
+ }
+ .features .contentOfFeaturedCourse{
+    padding: 20px 10px;
+
+ }
+
+.features .contentOfFeaturedCourse a{
+   text-decoration: none;
+   color: #FFB400;
+   font-weight: bold;
+   font-size: 1.3rem;
+  
+    
+ }
+ .features .contentOfFeaturedCourse #p_text{
+    
+    color: #7c7a74;
+     margin-top: 10px;
+  }
+
+  .features .contentOfFeaturedCourse #enrol{
+      background-color: #125D98;
+      padding: 14px 20px;
+      cursor: pointer;
+      color: rgb(233, 222, 222);
+      border-radius: 12px;
+      font-weight: bold;
+  
+    font-size: 1rem;
+    border: none;
+     
+  }
+
+
+
+  .star1 {
+      font-size: 1.25rem;
+      color: #b6b6b6;
+      display: inline-block;
+      cursor: pointer;
+  }
+  .star3{
+    font-size: 1.25rem;
+    color: #b6b6b6;
+    display: inline-block;
+    cursor: pointer;
+}
+  .star2{
+    font-size: 1.25rem;
+    color: #b6b6b6;
+    display: inline-block;
+    cursor: pointer;
+}
+ 
+ ul{
+      list-style: none;
+  }
+
+  .over{
+      color: #f7c56f;
+  }
+  .fix{
+      color: gold;
+  }
+  .fix2{
+      color: gold;
+  }
+  .ff{
+      color: gold;
+  }
+
+
+  .rating{
+      /* padding: 20px; */
+      /* margin-bottom: 10px 0px; */
+      text-align: center;
+      padding-top: 5px;
+      color: #FFB400;
+  }
+  .rating3{
+      /* padding: 20px; */
+      /* margin-bottom: 10px 0px; */
+      text-align: center;
+      padding-top: 5px;
+  }
+  .rating2{
+      /* padding: 20px; */
+      /* margin-bottom: 10px 0px; */
+      text-align: center;
+      padding-top: 5px;
+      align-items: center;
+  }
+ul{
+    margin: 0px;
+}
+ol{
+    margin: 0px;
+}
+ .left{
+     margin-left: 20px;
+ }
+  .stars_container{
+      display: flex;
+      flex-direction: row;
+      /* justify-content: space-between; */
+  }
+
+.a_btn{
+    margin-top: 25px;
+}
+
+ol{
+    list-style: none;
+    display: flex;
+    padding: 0rem 1rem;
+}
+ol li{
+    margin: 0px 0.2rem;
+    font-size: 1.25rem;
+    color: #b6b6b6;
+}
+
+.rating_p p{
+   display: none;
+   font-size: 1rem;
+   color: rgb(14, 12, 11);
+   margin: 0px;
+ padding: 5px 0px 0px 0px;
+
+} 
+.container_stars{
+ 
+  display: flex;
+  flex-direction: row;
+  
+}
+.rating_p{
+   /* padding: ;
+   padding: 5.5px 0px; */
+  text-align: center;
+ 
+}
+/* end of featured courses section */
+  
+    </style>
+</head>
+<body>
+    <section class="features">
+        <h1 id="title_courses">Courses 1</h1>
+        <div class="container_courses">
+
+          <div class="box">
+              <img src="photos/cousre11.jpg" alt="">
+              
+              <div class="contentOfFeaturedCourse">
+              <a href="">Full Stack Web Developer</a>
+              <p id="p_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, beatae. Modi quos excepturi id quibusdam? Molestiae quis nihil non debitis!</p>
+              <div class="stars_container">
+                <div class="rating">0/5</div>
+                  <div class="left">
+                  <ul class="star_list">
+                      <li class="star1"> <i class="fas fa-star"></i></li>
+                      <li class="star1"> <i class="fas fa-star"></i></li>
+                      <li class="star1"> <i class="fas fa-star"></i></li>
+                      <li class="star1"> <i class="fas fa-star"></i></li>
+                      <li class="star1"> <i class="fas fa-star"></i></li>
+                  </ul>
+                </div>
+                  
+                 
+                </div>
+                <div class="a_btn">
+                <a href="course.html" id="enrol">Enroll now</a>
+            </div>
+            </div>
+          </div>
+          
+          <div class="box">
+              <img src="photos/course22.jpg" alt="">
+              
+              <div class="contentOfFeaturedCourse">
+              <a href="">Robotics</a>
+              <p id="p_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, beatae. Modi quos excepturi id quibusdam? Molestiae quis nihil non debitis!</p>
+              <div class="stars_container">
+              
+                <div class="rating2">0/5</div>
+                <div class="left">
+                <ul class="star_list">
+                    <li class="star2"> <i class="fas fa-star"></i></li>
+                    <li class="star2"> <i class="fas fa-star"></i></li>
+                    <li class="star2"> <i class="fas fa-star"></i></li>
+                    <li class="star2"> <i class="fas fa-star"></i></li>
+                    <li class="star2"> <i class="fas fa-star"></i></li>
+                   
+                   
+                </ul>
+              </div>
+                  
+                 
+                </div>
+                <div class="a_btn">
+                <a href="" id="enrol">Enroll now</a>
+            </div>
+             
+            </div>
+          </div>
+          
+          <div class="box">
+              <img src="photos/course3.jpg" alt="">
+              
+              <div class="contentOfFeaturedCourse">
+              <a href="">Graphic Design</a>
+              <p id="p_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, beatae. Modi quos excepturi id quibusdam? Molestiae quis nihil non debitis!</p>
+              <div class="stars_container">
+                  
+                <div class="rating3">0/5</div>
+                <div class="left">
+                <ul class="star_list">
+                    <li class="star3"> <i class="fas fa-star"></i></li>
+                    <li class="star3"> <i class="fas fa-star"></i></li>
+                    <li class="star3"> <i class="fas fa-star"></i></li>
+                    <li class="star3"> <i class="fas fa-star"></i></li>
+                    <li class="star3"> <i class="fas fa-star"></i></li>
+                </ul>
+              </div>
+            </div>
+               
+                <div class="a_btn">
+                <a href="" id="enrol">Enroll now</a>
+            </div>
+        </div>
+            </div>
+          
+          
+
+
+            <div class="box">
+                <img src="photos/cousre11.jpg" alt="">
+                
+                <div class="contentOfFeaturedCourse">
+                <a href="">Full Stack Web Developer</a>
+                <p id="p_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, beatae. Modi quos excepturi id quibusdam? Molestiae quis nihil non debitis!</p>
+                <div class="stars_container">
+                  <div class="rating">0/5</div>
+                    <div class="left">
+                    <ul class="star_list">
+                        <li class="star1"> <i class="fas fa-star"></i></li>
+                        <li class="star1"> <i class="fas fa-star"></i></li>
+                        <li class="star1"> <i class="fas fa-star"></i></li>
+                        <li class="star1"> <i class="fas fa-star"></i></li>
+                        <li class="star1"> <i class="fas fa-star"></i></li>
+                    </ul>
+                  </div>
+                    
+                   
+                  </div>
+                  <div class="a_btn">
+                  <a href="course.html" id="enrol">Enroll now</a>
+              </div>
+              </div>
+            </div>
+
+
+            <div class="box">
+                <img src="photos/cousre11.jpg" alt="">
+                
+                <div class="contentOfFeaturedCourse">
+                <a href="">Full Stack Web Developer</a>
+                <p id="p_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, beatae. Modi quos excepturi id quibusdam? Molestiae quis nihil non debitis!</p>
+                <div class="stars_container">
+                  <div class="rating">0/5</div>
+                    <div class="left">
+                    <ul class="star_list">
+                        <li class="star1"> <i class="fas fa-star"></i></li>
+                        <li class="star1"> <i class="fas fa-star"></i></li>
+                        <li class="star1"> <i class="fas fa-star"></i></li>
+                        <li class="star1"> <i class="fas fa-star"></i></li>
+                        <li class="star1"> <i class="fas fa-star"></i></li>
+                    </ul>
+                  </div>
+                    
+                   
+                  </div>
+                  <div class="a_btn">
+                  <a href="photos/course.html" id="enrol">Enroll now</a>
+              </div>
+              </div>
+            </div>
+
+
+            <div class="box">
+                <img src="photos/cousre11.jpg" alt="">
+                
+                <div class="contentOfFeaturedCourse">
+                <a href="">Full Stack Web Developer</a>
+                <p id="p_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, beatae. Modi quos excepturi id quibusdam? Molestiae quis nihil non debitis!</p>
+                <div class="stars_container">
+                  <div class="rating">0/5</div>
+                    <div class="left">
+                    <ul class="star_list">
+                        <li class="star1"> <i class="fas fa-star"></i></li>
+                        <li class="star1"> <i class="fas fa-star"></i></li>
+                        <li class="star1"> <i class="fas fa-star"></i></li>
+                        <li class="star1"> <i class="fas fa-star"></i></li>
+                        <li class="star1"> <i class="fas fa-star"></i></li>
+                    </ul>
+                  </div>
+                    
+                   
+                  </div>
+                  <div class="a_btn">
+                  <a href="course.html" id="enrol">Enroll now</a>
+              </div>
+              </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
